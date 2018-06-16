@@ -4,5 +4,8 @@ from django.shortcuts import render
 
 def index(request):
 #    return HttpResponse("Hellow, world")
-    return render(request, 'cat/index.html')
-
+#    return render(request, 'cat/index.html')
+    context = {
+        'name':'RyosukellyPi',
+    }
+    return render(request, 'cat/index.html', context)
