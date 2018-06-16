@@ -6,6 +6,7 @@ urlpatterns = [
     path('', views.index, name='index'),    # /cat/index
     path('about/', views.about, name='about'),
     path('info/', views.info, name='info'),
-    path('catlist/', views.index, name='catlist'),    # /cat/index
+    path('catlist/', views.catlist, name='catlist'),    # /cat/index
+    path('catadd/', views.catadd, name='catadd'),    # /cat/index
     ]
 

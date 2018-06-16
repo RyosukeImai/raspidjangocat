@@ -1,5 +1,6 @@
 from django.shortcuts import render
 #from django.http import HttpResponse
+from .forms import CatCreateForm
 
 
 def index(request):
@@ -27,3 +28,9 @@ def catlist(request):
         'name':'RyosukellyCat',
     }
     return render(request, 'cat/cat_list.html', context)
+
+def catadd(request):
+    context = {
+        'form':CatCreateForm()
+    }
+    reture render(request, 'cat/cat_add.html', context)

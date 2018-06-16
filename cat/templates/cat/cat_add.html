@@ -1,0 +1,10 @@
+{% extends 'cat/base.html' %}
+{% block title %}cataddページ{% endblock %}
+{% block content %}
+<h1>ネコ追加ページです</h1>
+<form action="" method="POST">
+{{ form.as_p }}
+<button type="submit">送信</button>
+{% csrf_token %}
+</form>
+{% endblock %}
