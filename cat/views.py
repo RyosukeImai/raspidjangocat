@@ -40,7 +40,7 @@ def catadd(request):
     # method=POST つまり送信ボタン押下時入力内容が問題なければ
     if request.method=='POST' and form_is_valid():
         form_save()
-        return redirect(cat:catlist)
+        return redirect('cat:catlist')
 
         # 通常時のページアクセスや入力内容に誤りがあった場合
         context = {
