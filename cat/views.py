@@ -18,3 +18,12 @@ def about(request):
 def info(request):
     """/info"""
     return render(request, 'cat/info.html')
+
+def catlist(request):
+    #    return HttpResponse("Hellow, world")
+#    return render(request, 'cat/index.html')
+    """/キャットリスト"""
+    context = {
+        'name':'RyosukellyCat',
+    }
+    return render(request, 'cat/cat_list.html', context)
