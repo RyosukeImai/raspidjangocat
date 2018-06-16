@@ -33,4 +33,4 @@ def catadd(request):
     context = {
         'form':CatCreateForm()
     }
-    reture render(request, 'cat/cat_add.html', context)
+    return render(request, 'cat/cat_add.html', context)
