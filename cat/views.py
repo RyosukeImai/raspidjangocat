@@ -46,5 +46,5 @@ def catadd(request):
         context = {
             'form':form
         }
-    return render(request,'cat/cat_add.html'.context)
+    return render(request,'cat/cat_add.html',context)
 
